@@ -1,0 +1,43 @@
+
+<!-- Rendering Form Styles -->
+<link rel="stylesheet" href="style.css">
+<!-- Rendering Form Styles -->
+
+<!-- Response Sent through Ajax-->
+<div id="form-messages"></div>
+<!-- Response Sent through Ajax-->
+
+    <form  method="post" id="contactForm" action="contact.php" >
+    <div id="showmessage" > </div>
+        <div class="control-group form-group">
+          <div class="controls row">
+            <div class="col">
+                <input type="text" class="form-control" name="getfname" id="firstname" placeholder="First name" required data-validation-required-message="Please enter your name.">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="getlname" id="lastname" placeholder="Last name" required data-validation-required-message="Please enter your name.">
+            </div>
+          </div>
+        </div>
+        <div class="control-group form-group">
+            <div class="controls">
+                <input type="tel" class="form-control" name="getphone" id="phone" placeholder="Telephone number" required data-validation-required-message="Please enter your phone number.">
+            </div>
+        </div>
+        <div class="control-group form-group">
+            <div class="controls">
+                <input type="email" class="form-control" name="getemail" id="email" placeholder="Email address" required data-validation-required-message="Please enter your email address.">
+            </div>
+        </div>
+        <div class="control-group form-group">
+            <div class="controls">
+              <textarea class="form-control" id="message" name="getmessage" placeholder="Your message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+            </div>
+        </div>
+        <button type="submit" name='contactbtn' class="btn btn-warning">Send Message</button>
+    </form>
+
+<!-- Calling Jquery  to perform ajax request -->
+<script src="jquery-2.1.0.min.js"></script>
+<script src="app.js"></script>
+<!-- Calling Jquery  to perform ajax request -->
